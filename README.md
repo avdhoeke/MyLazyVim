@@ -26,3 +26,15 @@ To use LazyVim, make sure to install the following requirements:
     sudo apt install lua5.4
     sudo apt install liblua5.4-dev
     ```
+
+    Then install Luarocks for Unix systems:
+
+    ```sh
+    wget https://luarocks.org/releases/luarocks-3.11.1.tar.gz
+    tar zxpf luarocks-3.11.1.tar.gz
+    cd luarocks-3.11.1
+    ./configure && make && sudo make install
+    sudo luarocks install luasocket
+    lua
+    > require "socket"
+    ```
